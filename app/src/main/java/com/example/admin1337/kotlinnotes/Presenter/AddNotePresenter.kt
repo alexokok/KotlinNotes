@@ -2,12 +2,13 @@ package com.example.admin1337.kotlinnotes.Presenter
 
 import com.example.admin1337.kotlinnotes.Model.Note
 import com.example.admin1337.kotlinnotes.Model.Notes
-import com.example.admin1337.kotlinnotes.Views.INoteView
+import com.example.admin1337.kotlinnotes.Presenter.Interfaces.NotePresenter
+import com.example.admin1337.kotlinnotes.Views.Interfaces.INoteView
 
 /**
  * Presenter для добавления заметки
  */
-class AddNotePresenter(override var noteView: INoteView) :NotePresenter {
+class AddNotePresenter(override var noteView: INoteView) : NotePresenter {
 
     override fun loadNote() {
 

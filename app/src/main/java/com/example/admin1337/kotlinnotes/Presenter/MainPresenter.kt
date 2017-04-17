@@ -2,9 +2,10 @@ package com.example.admin1337.kotlinnotes.Presenter
 
 import com.example.admin1337.kotlinnotes.Model.Note
 import com.example.admin1337.kotlinnotes.Model.Notes
-import com.example.admin1337.kotlinnotes.Views.IMainView
+import com.example.admin1337.kotlinnotes.Presenter.Interfaces.IMainPresenter
+import com.example.admin1337.kotlinnotes.Views.Interfaces.IMainView
 
-class MainPresenter(override var view: IMainView):IMainPresenter {
+class MainPresenter(override var view: IMainView): IMainPresenter {
 
     fun initNotes(): List<Note> {
         var notes = Notes.notes

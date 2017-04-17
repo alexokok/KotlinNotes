@@ -3,12 +3,13 @@ package com.example.admin1337.kotlinnotes.Presenter
 import android.os.Bundle
 import com.example.admin1337.kotlinnotes.Model.Note
 import com.example.admin1337.kotlinnotes.Model.Notes
-import com.example.admin1337.kotlinnotes.Views.INoteView
+import com.example.admin1337.kotlinnotes.Presenter.Interfaces.NotePresenter
+import com.example.admin1337.kotlinnotes.Views.Interfaces.INoteView
 
 /**
  * Presenter для вывода заметки
  */
-class ShowNotePresenter(override var noteView: INoteView) :NotePresenter{
+class ShowNotePresenter(override var noteView: INoteView) : NotePresenter {
 
     lateinit var oldNote:Note
 

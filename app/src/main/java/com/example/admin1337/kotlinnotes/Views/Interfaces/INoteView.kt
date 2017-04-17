@@ -1,4 +1,4 @@
-package com.example.admin1337.kotlinnotes.Views
+package com.example.admin1337.kotlinnotes.Views.Interfaces
 
 import android.content.Intent
 
@@ -15,5 +15,5 @@ interface INoteView {
 
     fun setDescription(title:String)
 
-    fun getIntent():Intent
+    fun getIntent(): Intent
 }

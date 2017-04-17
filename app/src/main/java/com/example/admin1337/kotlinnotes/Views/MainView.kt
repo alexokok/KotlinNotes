@@ -15,10 +15,11 @@ import android.widget.ListView
 import com.example.admin1337.kotlinnotes.Adapters.NotesAdapter
 import com.example.admin1337.kotlinnotes.Adapters.NotesListAdapter
 import com.example.admin1337.kotlinnotes.Model.Note
-import com.example.admin1337.kotlinnotes.Presenter.IMainPresenter
+import com.example.admin1337.kotlinnotes.Presenter.Interfaces.IMainPresenter
 import com.example.admin1337.kotlinnotes.Presenter.MainPresenter
 
 import com.example.admin1337.kotlinnotes.R
+import com.example.admin1337.kotlinnotes.Views.Interfaces.IMainView
 
 class MainView : AppCompatActivity(), IMainView {
 

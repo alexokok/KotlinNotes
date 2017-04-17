@@ -7,14 +7,15 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.EditText
 
-import com.example.admin1337.kotlinnotes.Presenter.NotePresenter
+import com.example.admin1337.kotlinnotes.Presenter.Interfaces.NotePresenter
 import com.example.admin1337.kotlinnotes.Presenter.ShowNotePresenter
 import com.example.admin1337.kotlinnotes.R
+import com.example.admin1337.kotlinnotes.Views.Interfaces.INoteView
 
 /**
  * view для просмотра заметки
  */
-class ShowNoteView() :AppCompatActivity(), INoteView{
+class ShowNoteView() :AppCompatActivity(), INoteView {
 
     lateinit var title: EditText;
 

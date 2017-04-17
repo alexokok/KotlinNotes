@@ -8,8 +8,9 @@ import android.widget.Button
 import android.widget.EditText
 
 import com.example.admin1337.kotlinnotes.Presenter.AddNotePresenter
-import com.example.admin1337.kotlinnotes.Presenter.NotePresenter
+import com.example.admin1337.kotlinnotes.Presenter.Interfaces.NotePresenter
 import com.example.admin1337.kotlinnotes.R
+import com.example.admin1337.kotlinnotes.Views.Interfaces.INoteView
 
 class AddNoteView() : AppCompatActivity(), INoteView {
 

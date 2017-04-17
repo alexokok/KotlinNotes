@@ -9,14 +9,14 @@ import com.example.admin1337.kotlinnotes.Model.Note
 import android.view.LayoutInflater
 import com.example.admin1337.kotlinnotes.Model.Notes.NoteList.notes
 import com.example.admin1337.kotlinnotes.R
-import com.example.admin1337.kotlinnotes.Views.IMainView
+import com.example.admin1337.kotlinnotes.Views.Interfaces.IMainView
 import kotlinx.android.synthetic.main.item_note.view.*
 
 
 /**
  * Адаптер для RecyclerView
  */
-class NotesListAdapter(var mainView:IMainView, var notes:List<Note>): RecyclerView.Adapter<NotesListAdapter.ViewHolder>() {
+class NotesListAdapter(var mainView: IMainView, var notes:List<Note>): RecyclerView.Adapter<NotesListAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(mainView.getContext())
@@ -38,9 +38,9 @@ class NotesListAdapter(var mainView:IMainView, var notes:List<Note>): RecyclerVi
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        lateinit var mainView:IMainView
+        lateinit var mainView: IMainView
 
-        fun setView(view:IMainView){
+        fun setView(view: IMainView){
             mainView = view
         }
 
